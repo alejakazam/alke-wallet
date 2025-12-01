@@ -1,0 +1,121 @@
+    body{
+        padding: 100px;
+        font-family: arial,sans-serif;
+        color: #D2D2D2;
+        font-size: large;
+    }
+@media (max-width: 768px) {
+    body {
+        background-color: #2A2A2E;
+    }
+}
+@media (min-width: 769px) {
+    body {
+        background-image: url('https://i.imgur.com/WTzlE2S.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #2a2a2e;
+    }
+}
+    .container {
+        max-width: 400px;
+        margin: 0 auto;      
+    }
+    .logo{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    #menu a{
+        margin: 5px;
+    }
+    .boton a button{
+        margin-top: 25px;
+    }
+    #principal a{
+        margin-top: 10px;
+    }
+    .list-group-item{
+        background-color:#fff;
+        color: #41727D;
+        text-decoration: none;
+        border-color: #41727D;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .btn{
+        background-color: #41727D;
+        color: #fff;
+        font-size: large;
+    }
+    .btn:hover {
+        color: #fff;
+        background:#518894;
+    }
+    .saldo{
+        background-color: #fff;
+        color: #41727D;
+        border: 2px solid #518894;
+        border-radius: 25px;
+    }
+    .modal-header {
+        border-color: #41727D;
+    }
+    .modal-footer {
+        border-color: #41727D;
+    }
+    #formModal .btn {
+        border-color: #41727D;
+    }
+    #formModal input:hover {
+        border-color: #41727D;
+    }
+    #formModal input:focus {
+        border-color: #41727D;
+        box-shadow: 0 0 5px rgba(98, 172, 192, 0.5);
+    }
+    .form-check-input:checked {
+        background-color: #41727D;
+        border-color: #41727D;
+    }
+    .radio-contacto {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #41727D;   
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        margin-right: 6px;
+    }
+    .radio-contacto:checked {
+        border-color: #41727D;
+        background-color: #ffffff;
+    }
+    .radio-contacto:checked::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        background: #41727D;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .form-control {
+        box-shadow: #41727D;
+    }
+    .form-control:focus {
+        box-shadow: #41727D; 
+        outline: #41727D;
+        border-color: #41727D;
+    }
+    .filtroBusqueda {
+        color: #41727D;
+        font-size: small;
+    }

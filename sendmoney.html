@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <title>Transferencias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="logo"><img src="assets/images/logo.png" alt="logo fake bank" width="280"></div>
+        <div class="container">
+            <h2>Enviar Dinero</h2>
+            <form>
+                <div class="form-group">
+                  <label for="searchContact">Buscar en la agenda de transferencias:</label>
+                  <input type="text" class="form-control" id="searchContact" placeholder="Buscar contacto">
+                </div>
+                <div class="d-grid gap-0 col-12 mx-auto">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#formModal">
+                Agregar nuevo contacto
+                </button>
+                </div>
+            <h2>Contactos</h2>
+                <ul id="contactList" class="list-group">
+                  <li class="list-group-item">
+                    <div class="contact-info">
+                      <input type="radio" name="contactoSeleccionado" class="radio-contacto">
+                      <span class="nombre-contacto">Juan Pérez</span>
+                      <span class="detalles-contacto numCuenta">Cuenta n°:123456789</span>
+                      <span class="detalles-contacto alias">Alias:Juan Pérez</span>
+                      <span class="detalles-contacto banco">Banco:xxxx</span>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="contact-info">
+                      <input type="radio" name="contactoSeleccionado" class="radio-contacto">
+                      <span class="nombre-contacto">Ana Jara</span>
+                      <span class="detalles-contacto">Cuenta n°:987654321</span>
+                      <span class="detalles-contacto alias">Alias: Anita</span>
+                      <span class="detalles-contacto banco">Banco:xxxx</span>
+                    </div>
+                  </li></ul>
+                    <button type="button" class="btn d-grid gap-0 col-12 mx-auto" id="moneySend">Enviar dinero</button>
+            </form>
+                  <a href="menu.html" class="btn action-btn d-grid gap-0 col-12 mx-auto">Volver al Menú Principal</a>
+        </div>
+            <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="formModalLabel">Agregar nuevo contacto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+
+              <div class="modal-body">
+                <form id="myForm">
+                  <div class="mb-3">
+                    <label class="form-label">Nombre y Apellido*</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Alias</label>
+                    <input type="email" class="form-control" id="alias">
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">N° De cuenta*</label>
+                    <input type="text" class="form-control" id="numcuenta" required>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Banco*</label>
+                    <input type="text" class="form-control" id="banco" required>
+                  </div>
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="submitForm">Guardar</button>
+              </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>          
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="assets/js/sendmoney.js"></script>  
+    </body>
+</html>

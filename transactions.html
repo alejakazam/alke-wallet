@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <title>Transacciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+        <div class="logo"><img src="assets/images/logo.png" alt="logo fake bank" width="280"></div>
+        <div class="container">
+          <h2>Últimos Movimientos</h2>
+              <div class="d-flex align-items-center gap-3 mb-3 p-3 bg-light rounded shadow-sm">
+                    <i class="bi bi-search text-dark"></i>
+                     <div class="form-check filtroBusqueda">
+                      <input class="form-check-input" type="checkbox" id="filtroDepositos" checked>
+                      <label class="form-check-label" for="filtroDepositos">
+                      Mostrar depósitos
+                      </label>
+                    </div>
+              <div class="form-check filtroBusqueda">
+                  <input class="form-check-input" type="checkbox" id="filtroTransferencias" checked>
+                  <label class="form-check-label" for="filtroTransferencias">
+                      Mostrar transferencias
+                  </label>
+              </div>
+              </div>
+          <ul class="list-group">
+          <li class="list-group-item">No hay movimientos</li>
+          </ul>
+          <div class=d-grid gap-0 col-12 mx-auto id="principal"><a href="menu.html" class="btn action-btn">Volver al Menú Principal</a></div>
+        </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>      
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="assets/js/transactions.js"></script>
+</body>
+</html>
